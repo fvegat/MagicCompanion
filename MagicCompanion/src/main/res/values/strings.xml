@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Magic Companion</string>
+    <string name="life">20</string>
+    <string name="action_settings">Settings</string>
+    <string name="reset">Reset</string>
+    <string name="fateful_hour">Fateful Hour</string>
+    <string name="life_plus">+1</string>
+    <string name="life_less">-1</string>
+    <string name="life_plus3">+3</string>
+    <string name="life_less3">-3</string>
+    <string name="life_plus5">+5</string>
+    <string name="life_less5">-5</string>
+</resources>

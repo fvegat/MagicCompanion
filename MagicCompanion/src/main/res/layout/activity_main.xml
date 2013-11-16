@@ -6,12 +6,11 @@
     android:keepScreenOn="true"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/ll_main_life"
+    <RelativeLayout
+        android:id="@+id/rl_main_life"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:orientation="vertical">
+        android:layout_centerHorizontal="true">
         <TextView
             android:id="@+id/tv_fateful_hour"
             android:layout_width="wrap_content"
@@ -28,12 +27,14 @@
             android:text="@string/life"
             android:textSize="100dp"
             android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_fateful_hour"
             />
-        </LinearLayout>
+        </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/ll_life"
-        android:layout_below="@+id/ll_main_life"
+        android:layout_below="@+id/rl_main_life"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -97,11 +98,13 @@
 
 
     </LinearLayout>
+
     <Button
         android:id="@+id/btn_reset"
-        android:layout_below="@id/ll_life"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/reset"/>
+        android:text="@string/reset"
+        android:layout_below="@id/ll_life"
+        />
 
 </RelativeLayout>
